@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<form name="formularz" method="post" onsubmit="return waliduj()">
+<input type="date"id="dt1"></input>
+<input type="date"id="dt2"></input>
+<input type="submit" value="wyslij"><br/>
+</form>
+<script type="text/javascript">
+function waliduj()
+{
+var dt1=document.formularz.dt1.value;
+var dt2=document.formularz.dt2.value;
+document.write(dt1+" "+dt2);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8"/>
+<script>
+			function pole() 
+			{
+				if (bok.value=="") 
+				{
+					alert("Należy wpisać wartość liczbową");
+				}
+				else 
+				{
+					wynik.innerHTML="P = a<sup>2</sup>= "+(bok.value*bok.value);
+				}
+			}
+			function obwod() 
+			{
+				if (bok.value=="") 
+				{
+					alert("Należy wpisać wartość liczbową");
+				}
+				else 
+				{
+					wynik.innerHTML="Obw = 4a = "+(4*bok.value);
+				}
+			}
+</script>
+</head>
+<body>
+<div id="baner">
+<a href="index.html">FIGURY GEOMETRYCZNE I MATEMATYCY</a>
+</div>
+<div id="lewy">
+<h3>WYBIERZ FIGURĘ</h3>
+<ol>
+<li><a href="kwadrat.html">KWADRAT</a></li>
+<ul>
+<li>obwód</li>
+<li>pole</li>
+</ul>
+<li><a href="kolo.html">KOŁO</a></li>
+<ul>
+<li>obwód</li>
+<li>pole</li>
+</ul>
+</ol>
+<h3><a href="matematycy.txt">BAZA DANYCH</a></h3>
+</div>
+<div id="prawy">
+<h1>KWADRAT</h1><br/>
+<i>Podaj długość boku:</i><input type="text" id="bok"/><br/><br/>
+<input type="button" name="pole" value="licz pole" onclick="pole();"/>
+<input type="button" name="obwod" value="licz obwód" onclick="obwod();"/>
+<output id="wynik"></output>
+</div>
+<div id="stopka">
+Strona stworzona przez: 01300300250
+</div>
+</body>
+</html>

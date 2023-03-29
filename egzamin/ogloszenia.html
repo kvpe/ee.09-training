@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Portal ogłoszeniowy</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="styl5.css"/>
+	<script>
+function foblicz()
+	{
+		var num = document.getElementById("num").value;
+		num = Number(num);
+		if(num>0 && num<51)
+		{
+			if(document.getElementById("chbox").checked==false)
+			{
+			document.getElementById("wynik").innerHTML="Koszt ogłoszeń: "+num*2+" PLN";
+			}
+			else
+			{
+			document.getElementById("wynik").innerHTML="Koszt ogłoszeń: "+(num-0.2)*2+" PLN";
+			}
+		}
+		else
+		{
+		if(document.getElementById("chbox").checked==false)
+			{
+			document.getElementById("wynik").innerHTML="Koszt ogłoszeń: "+num+" PLN";
+			}
+			else
+			{
+			document.getElementById("wynik").innerHTML="Koszt ogłoszeń: "+Number(num-(0.2*num))+" PLN";
+			}
+		}
+		
+	}
+	</script>
+</head>
+<body>
+	<div id="box">
+		<div id="baner">
+		<h1>Portal ogłoszeniowy</h1>
+		</div>
+		<div id="row1">
+			<div id="row1a">
+			<img src="logo-male.png"/>
+			</div>
+			<div id="row1b">
+			<h3>Adres</h3><p>ul. Morska 45<br/>Gdynia</p>
+			</div>
+			<div id="row1c">
+			<h3>telefon</h3><p>601601601</p>
+			</div>
+			<div id="row1d">
+			<h3>e-mail</h3><p>ogłoszenia@poczta.pl</p>
+			</div>
+		</div>
+		<div id="row2">
+			<div id="row2a">
+			<h2>Ceny ogłoszeń</h2>
+			<table>
+				<tr>
+					<td>Liczba ogłoszeń</td><td>Cena ogłoszenia</td><td>Bonus</td>
+				</tr>
+				<tr>
+					<td>1-50</td><td>2 PLN</td><td rowspan=2>Subskrypcja newslettera to upust 0,20 PLN na ogłoszenie</td>
+				</tr>
+				<tr>
+					<td>51 i więcej</td><td>1 PLN</td>
+				</tr>
+			</table>
+			</div>
+			<div id="row2b">
+			<h2>Witamy na stronie naszego portalu!</h2>
+			<img src="logo-duze.png" alt="ogłoszenia"/>
+			</div>
+			<div id="row2c">
+			<h2>Ile kosztuje ogłoszenie?</h2>
+			Podaj liczbę ogłoszeń:<br/><input type="number" id="num" min="1"/><br/>
+			<input type="checkbox" id="chbox"/>Policz upust na newsletter<br/>
+			<input type="button" id="btn" value="Oblicz" onclick="foblicz();"/>
+			<p id="wynik"></p>
+			</div>
+		</div>
+		<div id="stopka">
+		Portal ogłoszeniowy opracował: 01300300250
+		</div>
+	</div>
+</body>
+</html> 

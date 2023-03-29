@@ -1,0 +1,43 @@
+
+#box
+{
+	width:1210px;
+	height:1200px;
+	margin:auto;
+}
+#row1, #row2, #row3, #row4, #row5
+{
+	width:1210px;
+	height:100px;
+}
+#row1a, #row1b, #row1c, #row1d, #row2a, #row2b, #row2c, #row2d, #row3a, #row3b, #row3c, #row3d, #row4a, #row4b, #row4c, #row4d, #row5a, #row5b, #row5c, #row5d
+{
+	width:300px;
+	height:100px;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	border:solid black 1px;
+	display:block;
+	margin:auto;
+}
+#row2b
+{
+	background-image:url("pom2.jpg");
+	background-repeat:no-repeat;
+}
+#row3b
+{
+	background-image:url("kap2.jpg");
+	background-repeat:no-repeat;
+}
+#row4b
+{
+	background-image:url("mar2.jpg");
+	background-repeat:no-repeat;
+}
+#row5b
+{
+	background-image:url("jab2.jpg");
+	background-repeat:no-repeat;
+}

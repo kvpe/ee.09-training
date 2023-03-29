@@ -1,0 +1,54 @@
+body
+{
+	font-family: Georgia;
+}
+#baner1, #stopka1
+{
+	position: relative;
+	float: left;
+	background-color: Sienna;
+	color: white;
+	height: 150px;
+	width: 40%;
+}
+#baner2, #stopka2
+{
+	position: relative;
+	float: left;
+	background-color: Sienna;
+	color: white;
+	height: 150px;
+	width: 50%;
+	font-size: 150%;
+}
+#baner3, #stopka3
+{
+	position: relative;
+	float: left;
+	background-color: Sienna;
+	color: white;
+	height: 150px;
+	width: 10%;
+	text-align: center;
+}
+#glowny
+{
+	position: relative;
+	float: left;
+	background-color: Tan;
+	padding: 100px 100px 100px 100px;
+	width: 100%;
+}
+a
+{
+	border: dashed 1px;
+	border-color: Sienna;
+	background-color: Tan;
+	color: Sienna;
+	padding: 40px 40px 40px 40px;
+	line-height: 150px;
+}
+ul
+{
+	list-style-type: square;
+}

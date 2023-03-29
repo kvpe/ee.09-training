@@ -1,0 +1,39 @@
+#lewy
+{
+	width:20%;
+	height:500px;
+	float:left;
+}
+#prawy
+{
+	width:80%;
+	height:500px;
+	float:left;
+	background-color:white;
+}
+#lewy, #baner, #stopka
+{
+	background-color:#63b03c;
+	color:white;
+	
+}
+#baner
+{
+	font-family:Arial;
+	font-size:300%;
+	font-variant:small-caps;
+	text-align:center;
+}
+#stopka
+{
+	text-align:center;
+}
+ul
+{
+	list-style-type:square;
+}
+a
+{
+	color: white;
+}
+

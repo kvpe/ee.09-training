@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="style.css"/>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="box">
+	<div id="row1">
+		<div id="row1a">
+		Warzywo/owoc
+		</div>
+		<div id="row1b">
+		Zdjęcie
+		</div>
+		<div id="row1c">
+		Ilość na zamówieniu
+		</div>
+		<div id="row1d">
+		Dostępny stan
+		</div>
+	</div>
+	<div id="row2">
+		<div id="row2a">
+		<input type="checkbox" id="ch1" onclick="fckbox(this.id,'num1','row2b','url(\'pom2.jpg\')','url(\'pom1.jpg\')')"/>Pomidor
+		</div>
+		<div id="row2b">
+		</div>
+		<div id="row2c">
+		<input type="number" min="0" id="num1" disabled="disabled"/>
+		</div>
+		<div id="row2d">
+		<input type="text" id="il1" value="50" disabled="disabled"/>
+		</div>
+	</div>
+	<div id="row3">
+		<div id="row3a">
+		<input type="checkbox" id="ch2" onclick="fckbox(this.id,'num2','row3b','url(\'kap2.jpg\')','url(\'kap1.jpg\')');"/>Kapusta
+		</div>
+		<div id="row3b">
+		</div>
+		<div id="row3c">
+		<input type="number" min="0" id="num2" disabled="disabled"/>
+		</div>
+		<div id="row3d">
+		<input type="text" id="il2" value="15" disabled="disabled"/>
+		</div>
+	</div>
+	<div id="row4">
+		<div id="row4a">
+		<input type="checkbox" id="ch3" onclick="fckbox(this.id,'num3','row4b','url(\'mar2.jpg\')','url(\'mar1.jpg\')');"/>Marchewka
+		</div>
+		<div id="row4b">
+		</div>
+		<div id="row4c">
+		<input type="number" min="0" id="num3" disabled="disabled"/>
+		</div>
+		<div id="row4d">
+		<input type="text" id="il3" value="20" disabled="disabled"/>
+		</div>
+	</div>
+	<div id="row5">
+		<div id="row5a">
+		<input type="checkbox" id="ch4" onclick="fckbox(this.id,'num4','row5b','url(\'jab2.jpg\')','url(\'jab1.jpg\')');"/>Jabłko
+		</div>
+		<div id="row5b">
+		</div>
+		<div id="row5c">
+		<input type="number" min="0" id="num4" disabled="disabled"/>
+		</div>
+		<div id="row5d">
+		<input type="text" id="il4" value="30" disabled="disabled"/>
+		</div>
+	</div>
+	Dane zamawiającego: Imię:<input type="text" id="imie"> Nazwisko:<input type="text" id="nazwisko"> email:<input type="text" id="email">
+	<br/> <input type="button" value="WYŚLIJ" id="btnwyslij" onclick="fwyslij();"/>
+</div>
+</body>
+</html>

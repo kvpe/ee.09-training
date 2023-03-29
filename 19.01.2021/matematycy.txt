@@ -1,0 +1,5 @@
+Carl gauss
+	Badania arytmetyczne, 1801r.
+Stefan Banach
+	Rachunek różniczkowy i całkowy, 1929r.
+	Teoria operacji, 1931r.

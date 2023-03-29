@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="1">
+<script type="text/javascript">
+function samogloski()
+{
+	var il_a=0;
+	var il_e=0;
+	var il_i=0;
+	var il_o=0;
+	var il_u=0;
+	var il_y=0;
+	var str = document.getElementById("1").value;
+		for(var n=0;n<str.length;n++)
+		{
+		if(str.charAt(n)=="a")
+		{il_a++;}
+		if(str.charAt(n)=="e")
+		{il_e++;}
+		if(str.charAt(n)=="i")
+		{il_i++;}
+		if(str.charAt(n)=="o")
+		{il_o++;}
+		if(str.charAt(n)=="u")
+		{il_u++;}
+		if(str.charAt(n)=="y")
+		{il_y++;}
+	}
+        document.getElementById("a").innerHTML="Liczba samogłosek a to "+il_a;
+		document.getElementById("e").innerHTML="Liczba samogłosek e to "+il_e;
+		document.getElementById("i").innerHTML="Liczba samogłosek i to "+il_i;
+		document.getElementById("o").innerHTML="Liczba samogłosek o to "+il_o;
+		document.getElementById("u").innerHTML="Liczba samogłosek u to "+il_u;
+		document.getElementById("y").innerHTML="Liczba samogłosek y to "+il_y;
+ }   
+</script>
+
+<input type="button" value="Sprawdź ilość samogłosek" onclick="samogloski()">
+<p id="a"></p>
+<p id="e"></p>
+<p id="i"></p>
+<p id="o"></p>
+<p id="u"></p>
+<p id="y"></p>
+
+</body>
+</html>

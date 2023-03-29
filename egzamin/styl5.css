@@ -1,0 +1,56 @@
+#box
+{
+	height:100%;
+	width:100%;
+	margin:auto;
+}
+#baner
+{
+	color:white;
+	text-align:center;
+	background-color:#009999;
+	height:80px;
+}
+#row1a, #row1b, #row1c, #row1d
+{
+	background-color:#009999;
+	font-family:Arial;
+	color:white;
+	text-align:center;
+	height:150px;
+	width:25%;
+	float:left;
+}
+#row2a, #row2c
+{
+	background-color:#669999;
+	width:30%;
+	height:600px;
+	float:left;
+}
+#row2b
+{
+	background-color:#99CCCC;
+	width:40%;
+	height:600px;
+	float:left;
+	text-align:center;
+}
+#stopka
+{
+	background-color:#009999;
+	color:white;
+	text-align:right;
+}
+table, tr, td
+{
+	text-align:center;
+	border: 1px solid green;
+}
+input[type=button]
+{
+	border:none;
+	margin:10px;
+	background-color:green;
+	color:white;
+}
